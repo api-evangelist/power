@@ -1,7 +1,22 @@
 aid: power
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/power.png
 name: Power
-description: Power is a company surfaced as a portfolio company of anthemis, crv and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Power (withpower.com) is a clinical-trial search and matching platform that helps patients
+  find and enroll in research studies. It maintains a database of tens of thousands of active clinical
+  trials searchable by condition, location, and drug type, and connects patients, providers, research
+  coordinators, and trial sponsors. Added to the API Evangelist network as a portfolio company of Anthemis
+  and CRV; no public API surface was found during enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/power/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Clinical Trials
+- Healthcare
+- Clinical Research
+- Patient Matching
+- Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +42,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/power-trust-center.yml
+- type: Compliance
+  url: security/power-trust-center.yml
+- type: DomainSecurity
+  url: security/power-domain-security.yml
+- type: Security
+  url: https://www.withpower.com/security
 - type: Website
   url: https://www.withpower.com/
+- type: About
+  url: https://www.withpower.com/about-us
+- type: TermsOfService
+  url: https://www.withpower.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.withpower.com/privacy-policy
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
